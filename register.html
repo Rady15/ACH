@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-tajawal bg-bg-main">
+    <div class="min-h-screen flex items-center justify-center px-4 py-12">
+        <div class="max-w-md w-full space-y-8">
+            <!-- Header -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-building text-white text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">إنشاء حساب جديد</h2>
+                <p class="mt-2 text-sm text-gray-600">انضم إلينا وابدأ في إدارة معاملات شركتك</p>
+            </div>
+
+            <!-- Registration Form -->
+            <form class="mt-8 space-y-6" action="#" method="POST">
+                <div class="space-y-4">
+                    <!-- Full Name -->
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700 mb-2">
+                            الاسم الكامل
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-user text-gray-400"></i>
+                            </div>
+                            <input
+                                id="fullName"
+                                name="fullName"
+                                type="text"
+                                required
+                                class="appearance-none relative block w-full px-3 py-3 pr-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                                placeholder="أدخل اسمك الكامل"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                            البريد الإلكتروني
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-envelope text-gray-400"></i>
+                            </div>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                                class="appearance-none relative block w-full px-3 py-3 pr-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                                placeholder="أدخل البريد الإلكتروني"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                            رقم الهاتف
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-phone text-gray-400"></i>
+                            </div>
+                            <input
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                required
+                                class="appearance-none relative block w-full px-3 py-3 pr-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                                placeholder="05xxxxxxxx"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-2">
+                            كلمة المرور
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-lock text-gray-400"></i>
+                            </div>
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                required
+                                class="appearance-none relative block w-full px-3 py-3 pr-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                                placeholder="أدخل كلمة مرور قوية"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div>
+                        <label for="confirmPassword" class="block text-sm font-medium text-gray-700 mb-2">
+                            تأكيد كلمة المرور
+                        </label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <i class="fas fa-lock text-gray-400"></i>
+                            </div>
+                            <input
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                type="password"
+                                required
+                                class="appearance-none relative block w-full px-3 py-3 pr-10 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                                placeholder="أعد إدخال كلمة المرور"
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Company Type -->
+                    <div>
+                        <label for="companyType" class="block text-sm font-medium text-gray-700 mb-2">
+                            نوع الشركة
+                        </label>
+                        <select
+                            id="companyType"
+                            name="companyType"
+                            required
+                            class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-xl focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
+                        >
+                            <option value="">اختر نوع الشركة</option>
+                            <option value="individual">فردي</option>
+                            <option value="limited">مساهمة محدودة</option>
+                            <option value="joint">تضامن</option>
+                            <option value="establishment">منشأة</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input
+                            id="terms"
+                            name="terms"
+                            type="checkbox"
+                            required
+                            class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+                        >
+                    </div>
+                    <div class="mr-3 text-sm">
+                        <label for="terms" class="text-gray-700">
+                            أوافق على
+                            <a href="terms-of-service.html" class="text-primary hover:text-primary-dark font-medium">
+                                شروط الاستخدام
+                            </a>
+                            و
+                            <a href="privacy-policy.html" class="text-primary hover:text-primary-dark font-medium">
+                                سياسة الخصوصية
+                            </a>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Register Button -->
+                <div>
+                    <button
+                        type="submit"
+                        class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all"
+                        onclick="window.location.href='dashboard.html'"
+                    >
+                        <span class="absolute right-0 inset-y-0 flex items-center pr-3">
+                            <i class="fas fa-user-plus text-white"></i>
+                        </span>
+                        إنشاء الحساب
+                    </button>
+                </div>
+
+                <!-- Login Link -->
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        لديك حساب بالفعل؟
+                        <a href="login.html" class="font-medium text-primary hover:text-primary-dark">
+                            تسجيل الدخول
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

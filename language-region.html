@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اللغة والمنطقة - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: auto; min-height: 100%;" class="font-tajawal bg-bg-main">
+    <!-- Main Container -->
+    <div class="min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-6 shadow-md">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-arrow-right text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-medium">اللغة والمنطقة</h1>
+                        <p class="text-sm opacity-90">تخصيص اللغة والإعدادات الإقليمية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+            <!-- Language Settings -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-lg font-medium text-gray-800 mb-4">إعدادات اللغة</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">اللغة الرئيسية</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>العربية</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-800 font-medium">الكتابة من اليمين لليسار</p>
+                            <p class="text-sm text-gray-500">دعم اللغات العربية والعبرية</p>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary/25 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regional Settings -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-lg font-medium text-gray-800 mb-4">الإعدادات الإقليمية</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">البلد/المنطقة</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>المملكة العربية السعودية</option>
+                            <option>الإمارات العربية المتحدة</option>
+                            <option>الكويت</option>
+                            <option>قطر</option>
+                            <option>البحرين</option>
+                            <option>عمان</option>
+                            <option>الأردن</option>
+                            <option>مصر</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">المنطقة الزمنية</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>(GMT+03:00) الرياض</option>
+                            <option>(GMT+04:00) أبوظبي</option>
+                            <option>(GMT+03:00) الكويت</option>
+                            <option>(GMT+03:00) الدوحة</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">تنسيق التاريخ</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>DD/MM/YYYY</option>
+                            <option>MM/DD/YYYY</option>
+                            <option>YYYY-MM-DD</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">العملة</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>ريال سعودي (SAR)</option>
+                            <option>درهم إماراتي (AED)</option>
+                            <option>دينار كويتي (KWD)</option>
+                            <option>ريال قطري (QAR)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Number & Measurement -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-lg font-medium text-gray-800 mb-4">الأرقام والقياسات</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">فاصل الأرقام العشرية</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>فاصلة (,)</option>
+                            <option>نقطة (.)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">فاصل الآلاف</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>نقطة (.)</option>
+                            <option>فاصلة (,)</option>
+                            <option>مسافة</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">نظام القياس</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option selected>المتري</option>
+                            <option>الإمبراطوري</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save Button -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <button class="w-full bg-primary text-white py-3 rounded-xl font-medium hover:bg-primary-dark transition-all">
+                    حفظ الإعدادات
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-card-bg border-t border-gray-200 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-around py-3">
+                <!-- Home -->
+                <a href="dashboard.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-xs font-medium">الرئيسية</span>
+                </a>
+
+                <!-- Transactions -->
+                <a href="transactions.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-list-alt text-xl"></i>
+                    <span class="text-xs font-medium">المعاملات</span>
+                </a>
+
+                <!-- Company Profile -->
+                <a href="company-profile.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-building text-xl"></i>
+                    <span class="text-xs font-medium">ملف الشركة</span>
+                </a>
+
+                <!-- Notifications -->
+                <a href="notifications.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors relative">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="text-xs font-medium">الإشعارات</span>
+                    <span class="absolute top-1 right-3 w-2 h-2 bg-red-500 rounded-full"></span>
+                </a>
+
+                <!-- More -->
+                <a href="more.html" class="flex flex-col items-center gap-1 px-4 py-2 text-primary">
+                    <i class="fas fa-ellipsis-h text-xl"></i>
+                    <span class="text-xs font-medium">المزيد</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وساطة تجارية - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: auto; min-height: 100%;" class="font-tajawal bg-bg-main">
+    <!-- Main Container -->
+    <div class="min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-6 shadow-md">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-medium">وساطة تجارية</h1>
+                        <p class="text-sm opacity-90">وساطة في الصفقات التجارية</p>
+                    </div>
+                </div>
+                <a href="other-services.html" class="w-10 h-10 bg-white bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                    <i class="fas fa-arrow-right text-lg"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+            <!-- Service Info -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-xl flex items-center justify-center shadow-md">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-medium text-gray-800">وساطة تجارية</h2>
+                        <p class="text-sm text-gray-500">وساطة محايدة في حل النزاعات التجارية</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-3 bg-blue-50 rounded-xl">
+                        <p class="text-xs text-gray-500">مدة الإنجاز</p>
+                        <p class="text-lg font-medium text-blue-600">7-30 يوم</p>
+                    </div>
+                    <div class="text-center p-3 bg-green-50 rounded-xl">
+                        <p class="text-xs text-gray-500">الرسوم</p>
+                        <p class="text-lg font-medium text-green-600">حسب القيمة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mediation Types -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">نوع الوساطة</h2>
+                <div class="space-y-3">
+                    <label class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-primary transition-all">
+                        <input type="radio" name="mediation-type" class="ml-3" checked>
+                        <div>
+                            <p class="font-medium text-gray-800">وساطة تعاقدية</p>
+                            <p class="text-sm text-gray-500">حل النزاعات الناشئة عن العقود</p>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-primary transition-all">
+                        <input type="radio" name="mediation-type" class="ml-3">
+                        <div>
+                            <p class="font-medium text-gray-800">وساطة تجارية</p>
+                            <p class="text-sm text-gray-500">حل النزاعات في الصفقات التجارية</p>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-primary transition-all">
+                        <input type="radio" name="mediation-type" class="ml-3">
+                        <div>
+                            <p class="font-medium text-gray-800">وساطة شراكات</p>
+                            <p class="text-sm text-gray-500">حل النزاعات بين الشركاء</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Case Details -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">تفاصيل القضية</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">وصف النزاع</label>
+                        <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-1 focus:ring-primary" placeholder="وصف النزاع بالتفصيل"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">قيمة النزاع</label>
+                        <input type="number" class="w-full p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-1 focus:ring-primary" placeholder="أدخل القيمة بالريال">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">تاريخ بدء النزاع</label>
+                        <input type="date" class="w-full p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-1 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">الأطراف المعنية</label>
+                        <textarea rows="3" class="w-full p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-1 focus:ring-primary" placeholder="أسماء الأطراف وممثليهم"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requirements -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">المتطلبات</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span class="text-sm text-gray-700">وصف كامل للنزاع والأسباب</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span class="text-sm text-gray-700">الوثائق المتعلقة بالقضية</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span class="text-sm text-gray-700">موافقة جميع الأطراف على الوساطة</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Documents -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">رفع المستندات</h2>
+                <div class="space-y-4">
+                    <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center">
+                        <i class="fas fa-cloud-upload-alt text-gray-400 text-3xl mb-2"></i>
+                        <p class="text-gray-600 mb-2">اسحب وأفلت الملفات هنا أو</p>
+                        <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-all">
+                            اختر الملفات
+                        </button>
+                        <p class="text-xs text-gray-500 mt-2">PDF, DOC, JPG حتى 20MB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <button class="w-full py-3 bg-primary text-white rounded-xl font-medium hover:bg-primary-dark transition-all">
+                    طلب الوساطة
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

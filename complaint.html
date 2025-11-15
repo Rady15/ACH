@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إرسال شكوى - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: auto; min-height: 100%;" class="font-tajawal bg-bg-main">
+    <!-- Main Container -->
+    <div class="min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-6 shadow-md">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-arrow-right text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-medium">إرسال شكوى</h1>
+                        <p class="text-sm opacity-90">نرحب بملاحظاتك ومقترحاتك</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <!-- Complaint Form -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <div class="mb-6">
+                    <h2 class="text-lg font-medium text-gray-800 mb-2">تفاصيل الشكوى</h2>
+                    <p class="text-sm text-gray-600">يرجى تقديم تفاصيل واضحة لمساعدتنا في حل المشكلة</p>
+                </div>
+
+                <form class="space-y-6">
+                    <!-- Complaint Type -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">نوع الشكوى</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option>مشكلة تقنية</option>
+                            <option>تأخير في الخدمة</option>
+                            <option>خطأ في البيانات</option>
+                            <option>مشكلة في الدفع</option>
+                            <option>سوء خدمة</option>
+                            <option>اقتراح للتحسين</option>
+                            <option>أخرى</option>
+                        </select>
+                    </div>
+
+                    <!-- Priority Level -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">مستوى الأولوية</label>
+                        <div class="flex gap-4">
+                            <label class="flex items-center">
+                                <input type="radio" name="priority" value="low" class="w-4 h-4 text-primary focus:ring-primary">
+                                <span class="mr-2 text-sm text-gray-700">منخفض</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="priority" value="medium" class="w-4 h-4 text-primary focus:ring-primary" checked>
+                                <span class="mr-2 text-sm text-gray-700">متوسط</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="priority" value="high" class="w-4 h-4 text-primary focus:ring-primary">
+                                <span class="mr-2 text-sm text-gray-700">عالي</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="priority" value="urgent" class="w-4 h-4 text-primary focus:ring-primary">
+                                <span class="mr-2 text-sm text-gray-700">عاجل</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">موضوع الشكوى</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="اكتب موضوعاً واضحاً للشكوى">
+                    </div>
+
+                    <!-- Description -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">تفاصيل الشكوى</label>
+                        <textarea rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent resize-none" placeholder="يرجى وصف المشكلة بالتفصيل مع ذكر التواريخ والأرقام المرجعية إن أمكن..."></textarea>
+                    </div>
+
+                    <!-- Contact Preference -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">طريقة التواصل المفضلة</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option>البريد الإلكتروني</option>
+                            <option>الهاتف</option>
+                            <option>رسالة نصية</option>
+                            <option>عبر التطبيق</option>
+                        </select>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">إرفاق ملفات (اختياري)</label>
+                        <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-primary transition-colors">
+                            <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-600 mb-2">اسحب وأفلت الملفات هنا أو</p>
+                            <button type="button" class="text-primary font-medium hover:text-primary-dark">اختر الملفات</button>
+                            <input type="file" multiple class="hidden">
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2">الحد الأقصى لحجم الملف: 10MB لكل ملف</p>
+                    </div>
+
+                    <!-- Terms Agreement -->
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" class="w-4 h-4 text-primary focus:ring-primary mt-1">
+                        <div>
+                            <p class="text-sm text-gray-700">أوافق على أن تكون المعلومات المقدمة دقيقة وأتحمل المسؤولية عن صحتها</p>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-primary text-white py-3 rounded-xl font-medium hover:bg-primary-dark transition-all">
+                        <i class="fas fa-paper-plane ml-2"></i>
+                        إرسال الشكوى
+                    </button>
+                </form>
+            </div>
+
+            <!-- Important Notes -->
+            <div class="bg-blue-50 rounded-2xl p-6 border border-blue-200 mt-6">
+                <div class="flex items-start gap-3">
+                    <i class="fas fa-info-circle text-blue-600 text-lg mt-1"></i>
+                    <div>
+                        <h3 class="text-blue-800 font-medium mb-2">ملاحظات مهمة</h3>
+                        <ul class="text-sm text-blue-700 space-y-1">
+                            <li>• سيتم الرد على شكواك خلال 48 ساعة كحد أقصى</li>
+                            <li>• يرجى تقديم تفاصيل واضحة لتسهيل حل المشكلة</li>
+                            <li>• يمكنك تتبع حالة شكواك من خلال التطبيق</li>
+                            <li>• جميع الشكاوى تُعامل بسرية تامة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-card-bg border-t border-gray-200 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-around py-3">
+                <!-- Home -->
+                <a href="dashboard.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-xs font-medium">الرئيسية</span>
+                </a>
+
+                <!-- Transactions -->
+                <a href="transactions.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-list-alt text-xl"></i>
+                    <span class="text-xs font-medium">المعاملات</span>
+                </a>
+
+                <!-- Company Profile -->
+                <a href="company-profile.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-building text-xl"></i>
+                    <span class="text-xs font-medium">ملف الشركة</span>
+                </a>
+
+                <!-- Notifications -->
+                <a href="notifications.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors relative">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="text-xs font-medium">الإشعارات</span>
+                    <span class="absolute top-1 right-3 w-2 h-2 bg-red-500 rounded-full"></span>
+                </a>
+
+                <!-- More -->
+                <a href="more.html" class="flex flex-col items-center gap-1 px-4 py-2 text-primary">
+                    <i class="fas fa-ellipsis-h text-xl"></i>
+                    <span class="text-xs font-medium">المزيد</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

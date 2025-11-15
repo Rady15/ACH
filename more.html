@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزيد - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: auto; min-height: 100%;" class="font-tajawal bg-bg-main">
+    <!-- Main Container -->
+    <div class="min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-6 shadow-md">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-medium">المزيد</h1>
+                        <p class="text-sm opacity-90">إعدادات وخدمات إضافية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+            <!-- Settings & Support -->
+            <div class="space-y-4">
+                <!-- Account Settings -->
+                <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-user text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-800">إعدادات الحساب</h3>
+                            <p class="text-sm text-gray-500">إدارة معلومات الحساب والأمان</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="change-password.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">تغيير كلمة المرور</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                        <a href="notification-settings.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">إعدادات الإشعارات</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                        <a href="language-region.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">اللغة والمنطقة</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-green-500 bg-opacity-10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-headset text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-800">الدعم الفني</h3>
+                            <p class="text-sm text-gray-500">مساعدة ودعم على مدار الساعة</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="faq.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">الأسئلة الشائعة</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                        <a href="contact-us.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">اتصل بنا</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                        <a href="complaint.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">إرسال شكوى</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Legal & Info -->
+                <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 bg-blue-500 bg-opacity-10 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-info-circle text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-800">المعلومات القانونية</h3>
+                            <p class="text-sm text-gray-500">الشروط والأحكام والخصوصية</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="terms-of-service.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">شروط الاستخدام</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                        <a href="privacy-policy.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">سياسة الخصوصية</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                        <a href="intellectual-property.html" class="w-full flex items-center justify-between p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+                            <span class="text-gray-700">حقوق الملكية</span>
+                            <i class="fas fa-chevron-left text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logout -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <a href="login.html" class="w-full flex items-center justify-center gap-3 p-4 bg-red-50 text-red-600 rounded-xl hover:bg-red-100 transition-all">
+                    <i class="fas fa-sign-out-alt text-xl"></i>
+                    <span class="font-medium">تسجيل الخروج</span>
+                </a>
+            </div>
+
+            <!-- App Version -->
+            <div class="text-center text-sm text-gray-500">
+                الإصدار 1.0.0
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-card-bg border-t border-gray-200 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-around py-3">
+                <!-- Home -->
+                <a href="dashboard.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-xs font-medium">الرئيسية</span>
+                </a>
+
+                <!-- Transactions -->
+                <a href="transactions.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-list-alt text-xl"></i>
+                    <span class="text-xs font-medium">المعاملات</span>
+                </a>
+
+                <!-- Company Profile -->
+                <a href="company-profile.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-building text-xl"></i>
+                    <span class="text-xs font-medium">ملف الشركة</span>
+                </a>
+
+                <!-- Notifications -->
+                <a href="notifications.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors relative">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="text-xs font-medium">الإشعارات</span>
+                    <span class="absolute top-1 right-3 w-2 h-2 bg-red-500 rounded-full"></span>
+                </a>
+
+                <!-- More -->
+                <a href="more.html" class="flex flex-col items-center gap-1 px-4 py-2 text-primary">
+                    <i class="fas fa-ellipsis-h text-xl"></i>
+                    <span class="text-xs font-medium">المزيد</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

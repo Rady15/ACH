@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide - Company Transaction Management Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="font-tajawal bg-bg-main p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 mb-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-2">Style Guide</h1>
+        <p class="text-gray-600 mb-8">Company Transaction Management Platform</p>
+        
+        <!-- Colors Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">Color Palette</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-primary mb-2"></div>
+                    <p class="font-medium">Primary</p>
+                    <p class="text-sm text-gray-500">#1A73E8</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-primary-dark mb-2"></div>
+                    <p class="font-medium">Primary Dark</p>
+                    <p class="text-sm text-gray-500">#0F4DAC</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-secondary mb-2"></div>
+                    <p class="font-medium">Secondary</p>
+                    <p class="text-sm text-gray-500">#14B8A6</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-bg-main mb-2 border"></div>
+                    <p class="font-medium">Background</p>
+                    <p class="text-sm text-gray-500">#F5F7FA</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-card-bg mb-2 border"></div>
+                    <p class="font-medium">Card BG</p>
+                    <p class="text-sm text-gray-500">#FFFFFF</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-green-500 mb-2"></div>
+                    <p class="font-medium">Success</p>
+                    <p class="text-sm text-gray-500">#10B981</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-yellow-500 mb-2"></div>
+                    <p class="font-medium">Warning</p>
+                    <p class="text-sm text-gray-500">#F59E0B</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-red-500 mb-2"></div>
+                    <p class="font-medium">Danger</p>
+                    <p class="text-sm text-gray-500">#EF4444</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-blue-500 mb-2"></div>
+                    <p class="font-medium">Info</p>
+                    <p class="text-sm text-gray-500">#3B82F6</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-full h-20 rounded-xl bg-gray-300 mb-2"></div>
+                    <p class="font-medium">Gray 300</p>
+                    <p class="text-sm text-gray-500">#D1D5DB</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="page-break"></div>
+        
+        <!-- Typography Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">Typography</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <p class="text-4xl font-light mb-2">Heading 1 - Tajawal Light (36px)</p>
+                    <p class="text-gray-500">font-light text-4xl</p>
+                </div>
+                
+                <div>
+                    <p class="text-3xl font-normal mb-2">Heading 2 - Tajawal Regular (30px)</p>
+                    <p class="text-gray-500">font-normal text-3xl</p>
+                </div>
+                
+                <div>
+                    <p class="text-2xl font-medium mb-2">Heading 3 - Tajawal Medium (24px)</p>
+                    <p class="text-gray-500">font-medium text-2xl</p>
+                </div>
+                
+                <div>
+                    <p class="text-xl font-bold mb-2">Heading 4 - Tajawal Bold (20px)</p>
+                    <p class="text-gray-500">font-bold text-xl</p>
+                </div>
+                
+                <div>
+                    <p class="text-lg mb-2">Body Large - Tajawal Regular (18px)</p>
+                    <p class="text-gray-500">text-lg</p>
+                </div>
+                
+                <div>
+                    <p class="mb-2">Body Regular - Tajawal Regular (16px)</p>
+                    <p class="text-gray-500">text-base</p>
+                </div>
+                
+                <div>
+                    <p class="text-sm mb-2">Body Small - Tajawal Regular (14px)</p>
+                    <p class="text-gray-500">text-sm</p>
+                </div>
+                
+                <div>
+                    <p class="text-xs mb-2">Caption - Tajawal Regular (12px)</p>
+                    <p class="text-gray-500">text-xs</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="page-break"></div>
+        
+        <!-- Buttons Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">Buttons</h2>
+            
+            <div class="flex flex-wrap gap-4 mb-6">
+                <button class="px-6 py-3 bg-primary text-white rounded-xl font-medium hover:bg-primary-dark transition-all">
+                    Primary Button
+                </button>
+                
+                <button class="px-6 py-3 bg-secondary text-white rounded-xl font-medium hover:bg-teal-700 transition-all">
+                    Secondary Button
+                </button>
+                
+                <button class="px-6 py-3 bg-white border border-gray-300 text-gray-700 rounded-xl font-medium hover:bg-gray-50 transition-all">
+                    Outline Button
+                </button>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-xl">
+                <h3 class="font-medium mb-2">Button Specifications:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                    <li>Border Radius: 16px (rounded-xl)</li>
+                    <li>Padding: 12px vertical, 16px horizontal</li>
+                    <li>Font Size: 16px</li>
+                    <li>Font Weight: 500 (Medium)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="page-break"></div>
+        
+        <!-- Cards Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">Cards</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Default Card</h3>
+                    <p class="text-gray-600">This is a standard card component with rounded corners and subtle shadow.</p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-primary to-primary-dark text-white rounded-2xl shadow-md p-6">
+                    <h3 class="text-xl font-medium mb-2">Colored Card</h3>
+                    <p>This is a colored card with gradient background.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-xl">
+                <h3 class="font-medium mb-2">Card Specifications:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                    <li>Border Radius: 24px (rounded-2xl)</li>
+                    <li>Padding: 24px</li>
+                    <li>Background: White (#FFFFFF)</li>
+                    <li>Border: 1px solid #E5E7EB (gray-100)</li>
+                    <li>Shadow: sm (subtle)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="page-break"></div>
+        
+        <!-- Forms Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">Form Elements</h2>
+            
+            <div class="space-y-4 mb-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Text Input</label>
+                    <input type="text" placeholder="Enter text here" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Select Input</label>
+                    <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+                
+                <div class="flex items-center">
+                    <input type="checkbox" class="h-5 w-5 text-primary focus:ring-primary border-gray-300 rounded">
+                    <label class="ml-2 block text-sm text-gray-700">Checkbox Label</label>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-4 rounded-xl">
+                <h3 class="font-medium mb-2">Input Specifications:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                    <li>Border Radius: 16px (rounded-xl)</li>
+                    <li>Padding: 12px vertical, 16px horizontal</li>
+                    <li>Border: 1px solid #D1D5DB (gray-300)</li>
+                    <li>Focus Ring: 2px solid #1A73E8 (primary)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="page-break"></div>
+        
+        <!-- Icons Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">Icons</h2>
+            
+            <p class="text-gray-600 mb-6">The platform uses Font Awesome 6.4.0 icons. Here are some commonly used icons:</p>
+            
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-building text-primary text-2xl mb-2"></i>
+                    <p class="text-xs">fa-building</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-envelope text-primary text-2xl mb-2"></i>
+                    <p class="text-xs">fa-envelope</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-lock text-primary text-2xl mb-2"></i>
+                    <p class="text-xs">fa-lock</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-bell text-primary text-2xl mb-2"></i>
+                    <p class="text-xs">fa-bell</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-file-alt text-primary text-2xl mb-2"></i>
+                    <p class="text-xs">fa-file-alt</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-check-circle text-green-500 text-2xl mb-2"></i>
+                    <p class="text-xs">fa-check-circle</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-calendar-alt text-yellow-500 text-2xl mb-2"></i>
+                    <p class="text-xs">fa-calendar-alt</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-folder-open text-blue-500 text-2xl mb-2"></i>
+                    <p class="text-xs">fa-folder-open</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-exclamation-triangle text-orange-500 text-2xl mb-2"></i>
+                    <p class="text-xs">fa-exclamation-triangle</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-clock text-yellow-500 text-2xl mb-2"></i>
+                    <p class="text-xs">fa-clock</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-sync-alt text-primary text-2xl mb-2"></i>
+                    <p class="text-xs">fa-sync-alt</p>
+                </div>
+                
+                <div class="text-center p-4 bg-gray-50 rounded-xl">
+                    <i class="fas fa-edit text-purple-500 text-2xl mb-2"></i>
+                    <p class="text-xs">fa-edit</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 bg-gray-50 p-4 rounded-xl">
+                <h3 class="font-medium mb-2">Icon Usage:</h3>
+                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                    <li>Library: Font Awesome 6.4.0</li>
+                    <li>Primary Color: #1A73E8 (primary)</li>
+                    <li>Status Colors: Green (success), Yellow (warning), Red (danger)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+    <div class="text-center text-gray-500 text-sm">
+        <p>Print this document and import into Figma as a reference for consistent design implementation.</p>
+    </div>
+</body>
+</html>

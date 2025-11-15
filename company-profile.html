@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف الشركة - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: auto; min-height: 100%;" class="font-tajawal bg-bg-main">
+    <!-- Main Container -->
+    <div class="min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-6 shadow-md">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-medium">ملف الشركة</h1>
+                        <p class="text-sm opacity-90">بيانات الشركة والمستندات</p>
+                    </div>
+                </div>
+                <a href="#edit-form" class="w-10 h-10 bg-white bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                    <i class="fas fa-edit text-lg"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+            <!-- Company Info -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-6">معلومات الشركة</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">اسم الشركة</span>
+                        <span class="text-gray-800 font-medium">شركة التقنية المتقدمة المحدودة</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">الرقم الموحد</span>
+                        <span class="text-gray-800 font-medium">7012345678</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">السجل التجاري</span>
+                        <span class="text-gray-800 font-medium">1010123456</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">تاريخ التأسيس</span>
+                        <span class="text-gray-800 font-medium">01/01/2020</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">نوع النشاط</span>
+                        <span class="text-gray-800 font-medium">تقنية المعلومات</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3">
+                        <span class="text-gray-600">العنوان</span>
+                        <span class="text-gray-800 font-medium text-left">الرياض، المملكة العربية السعودية</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-xl font-medium text-gray-800">المستندات</h2>
+                    <button class="px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary-dark transition-all">
+                        <i class="fas fa-upload ml-2"></i>
+                        رفع مستند جديد
+                    </button>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-file-pdf text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-800">السجل التجاري</p>
+                                <p class="text-xs text-gray-500">تم التحديث: 15/10/2024</p>
+                            </div>
+                        </div>
+                        <button class="text-primary hover:text-primary-dark">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-500 bg-opacity-10 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-file-image text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-800">الرخصة التجارية</p>
+                                <p class="text-xs text-gray-500">تم التحديث: 01/09/2024</p>
+                            </div>
+                        </div>
+                        <button class="text-primary hover:text-primary-dark">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 bg-gray-50 rounded-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-500 bg-opacity-10 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-file-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-800">شهادة الزكاة والدخل</p>
+                                <p class="text-xs text-gray-500">تم التحديث: 20/08/2024</p>
+                            </div>
+                        </div>
+                        <button class="text-primary hover:text-primary-dark">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-6">معلومات الاتصال</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">البريد الإلكتروني</span>
+                        <span class="text-gray-800 font-medium">info@techcompany.com</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b border-gray-100">
+                        <span class="text-gray-600">رقم الهاتف</span>
+                        <span class="text-gray-800 font-medium">+966 50 123 4567</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3">
+                        <span class="text-gray-600">الموقع الإلكتروني</span>
+                        <span class="text-gray-800 font-medium">www.techcompany.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-card-bg border-t border-gray-200 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-around py-3">
+                <!-- Home -->
+                <a href="dashboard.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-xs font-medium">الرئيسية</span>
+                </a>
+
+                <!-- Transactions -->
+                <a href="transactions.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-list-alt text-xl"></i>
+                    <span class="text-xs font-medium">المعاملات</span>
+                </a>
+
+                <!-- Company Profile -->
+                <a href="company-profile.html" class="flex flex-col items-center gap-1 px-4 py-2 text-primary">
+                    <i class="fas fa-building text-xl"></i>
+                    <span class="text-xs font-medium">ملف الشركة</span>
+                </a>
+
+                <!-- Notifications -->
+                <a href="notifications.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors relative">
+                    <i class="fas fa-bell text-xl"></i>
+                    <span class="text-xs font-medium">الإشعارات</span>
+                    <span class="absolute top-1 right-3 w-2 h-2 bg-red-500 rounded-full"></span>
+                </a>
+
+                <!-- More -->
+                <a href="more.html" class="flex flex-col items-center gap-1 px-4 py-2 text-gray-400 hover:text-primary transition-colors">
+                    <i class="fas fa-ellipsis-h text-xl"></i>
+                    <span class="text-xs font-medium">المزيد</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

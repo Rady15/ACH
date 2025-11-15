@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات قانونية - منصة إدارة معاملات الشركات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1A73E8',
+                        'primary-dark': '#0F4DAC',
+                        'secondary': '#14B8A6',
+                        'bg-main': '#F5F7FA',
+                        'card-bg': '#FFFFFF'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: auto; min-height: 100%;" class="font-tajawal bg-bg-main">
+    <!-- Main Container -->
+    <div class="min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-6 shadow-md">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-primary text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-medium">خدمات قانونية</h1>
+                        <p class="text-sm opacity-90">استشارات قانونية وتوثيق</p>
+                    </div>
+                </div>
+                <a href="other-services.html" class="w-10 h-10 bg-white bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                    <i class="fas fa-arrow-right text-lg"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+            <!-- Service Info -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center shadow-md">
+                        <i class="fas fa-gavel text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-medium text-gray-800">خدمات قانونية</h2>
+                        <p class="text-sm text-gray-500">استشارات قانونية شاملة وتوثيق العقود</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-3 bg-blue-50 rounded-xl">
+                        <p class="text-xs text-gray-500">مدة الإنجاز</p>
+                        <p class="text-lg font-medium text-blue-600">1-7 أيام</p>
+                    </div>
+                    <div class="text-center p-3 bg-green-50 rounded-xl">
+                        <p class="text-xs text-gray-500">الرسوم</p>
+                        <p class="text-lg font-medium text-green-600">حسب الخدمة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Types -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">نوع الخدمة</h2>
+                <div class="space-y-3">
+                    <label class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-primary transition-all">
+                        <input type="radio" name="service-type" class="ml-3" checked>
+                        <div>
+                            <p class="font-medium text-gray-800">استشارة قانونية</p>
+                            <p class="text-sm text-gray-500">استشارات قانونية في مختلف المجالات</p>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-primary transition-all">
+                        <input type="radio" name="service-type" class="ml-3">
+                        <div>
+                            <p class="font-medium text-gray-800">صياغة العقود</p>
+                            <p class="text-sm text-gray-500">صياغة ومراجعة العقود التجارية</p>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 border border-gray-200 rounded-xl cursor-pointer hover:border-primary transition-all">
+                        <input type="radio" name="service-type" class="ml-3">
+                        <div>
+                            <p class="font-medium text-gray-800">توثيق قانوني</p>
+                            <p class="text-sm text-gray-500">توثيق الوثائق والعقود لدى الجهات المختصة</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Requirements -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">المتطلبات</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span class="text-sm text-gray-700">وصف المشكلة أو الاستشارة المطلوبة</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span class="text-sm text-gray-700">الوثائق ذات الصلة (إن وجدت)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span class="text-sm text-gray-700">معلومات الاتصال</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Details -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">تفاصيل الطلب</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">وصف الخدمة المطلوبة</label>
+                        <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-1 focus:ring-primary" placeholder="وصف المشكلة أو الاستشارة المطلوبة بالتفصيل"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">المجال القانوني</label>
+                        <select class="w-full p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-1 focus:ring-primary">
+                            <option>قانون تجاري</option>
+                            <option>قانون عمالي</option>
+                            <option>قانون ضريبي</option>
+                            <option>قانون عقود</option>
+                            <option>أخرى</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upload Documents -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <h2 class="text-xl font-medium text-gray-800 mb-4">رفع المستندات</h2>
+                <div class="space-y-4">
+                    <div class="border-2 border-dashed border-gray-300 rounded-xl p-6 text-center">
+                        <i class="fas fa-cloud-upload-alt text-gray-400 text-3xl mb-2"></i>
+                        <p class="text-gray-600 mb-2">اسحب وأفلت الملفات هنا أو</p>
+                        <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-all">
+                            اختر الملفات
+                        </button>
+                        <p class="text-xs text-gray-500 mt-2">PDF, DOC, JPG حتى 10MB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="bg-card-bg rounded-2xl shadow-sm p-6 border border-gray-100">
+                <button class="w-full py-3 bg-primary text-white rounded-xl font-medium hover:bg-primary-dark transition-all">
+                    إرسال الطلب
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
